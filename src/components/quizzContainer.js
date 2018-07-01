@@ -45,6 +45,7 @@ class ContainerBox extends Component {
 
     newRound() {
         this.props.generateQuiz();
+        this.setState({ startDate: Date.now() });
     }
 
     render() {
